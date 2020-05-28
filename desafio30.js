@@ -4,7 +4,7 @@ db.voos.count(
     $and:
       [
         {
-          "empresa.nome": "GOL"
+          "empresa.nome": "AZUL"
         },
         {
           "natureza": "Doméstica"
@@ -15,7 +15,7 @@ db.voos.count(
 
 db.resumoVoos.insertOne(
   {
-    "empresa": "GOL",
-    "totalVoosDomesticos": 25805
+    "empresa": "AZUL",
+    "totalVoosDomesticos": 39092
   }
 );
