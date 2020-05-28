@@ -1,4 +1,7 @@
 use dataFlights;
+db.voos.find({ "aeroportoOrigem.pais": { $ne: "BRASIL" } }).count();
+
+// outra forma
 db.voos.find({ "aeroportoOrigem.pais": { $not: { $eq: "BRASIL" } } }).count();
 
 // outra forma
