@@ -1,9 +1,9 @@
 use dataFlights;
 db.voos.findOne(
   {
-    "litrosCombustivel":
+    "rtk":
     {
-      $exists: true
+      $exists: false
     }
   },
   {
