@@ -194,16 +194,16 @@ Conte quantos voos da empresa `AZUL` com `natureza Doméstica` existem e insira 
     * Você deve criar uma branch no seguinte formato: `nome-de-usuario-nome-do-projeto`
     * Exemplo: `git checkout -b leandro-domingues-mongodb-dataflights`
 
-3. Para cada exercício você deve criar um novo arquivo sql seguindo a seguinte estrutura:
+3. Para cada exercício você deve criar um novo arquivo JS seguindo a seguinte estrutura:
   * desafio1.js, desafio2.js, ..., desafioN.js
 
 4. Adicione as mudanças ao _stage_ do Git e faça um `commit`
   * Verifique que as mudanças ainda não estão no _stage_
-    * Exemplo: `git status` (deve aparecer o arquivo que você alterou como desafio1.sql)
+    * Exemplo: `git status` (deve aparecer o arquivo que você alterou como desafio1.js)
   * Adicione o novo arquivo ao _stage_ do Git
       * Exemplo:
         * `git add .` (adicionando solução para desafio 1)
-        * `git status` (deve aparecer listado o arquivo _desafio1.sql_ em verde)
+        * `git status` (deve aparecer listado o arquivo _desafio1.js_ em verde)
   * Faça o `commit` inicial
       * Exemplo:
         * `git commit -m 'iniciando o projeto MongoDB dataflights'` (fazendo o primeiro commit)
