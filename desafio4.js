@@ -1,4 +1,6 @@
 use dataFlights;
 db.voos.find(
-  {"empresa.nome":/azul/i}
+  {
+    "empresa.nome": 'AZUL'
+  }
 ).limit(10).pretty();

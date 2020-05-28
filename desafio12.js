@@ -1,7 +1,15 @@
 use dataFlights;
 db.voos.find(
-  { $and:
-    [{"empresa.nome": /gol/i}, {"ano": 2017}]
+  {
+    $and:
+      [
+        {
+          "empresa.nome": 'GOL'
+        },
+        {
+          "ano": 2017
+        }
+      ]
   },
   {
     "empresa.nome": 1,

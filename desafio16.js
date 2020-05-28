@@ -1,10 +1,9 @@
 use dataFlights;
 db.voos.count(
   {
-    ano:
+    "aeroportoOrigem.pais":
     {
-      $in:
-        [2017, 2018]
+      $ne: 'BRASIL'
     }
   }
 );

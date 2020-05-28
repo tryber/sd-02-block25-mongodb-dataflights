@@ -1,4 +1,6 @@
 use dataFlights;
 db.voos.count(
-  {"empresa.nome":/gol/i}
+  {
+    "empresa.nome": 'GOL'
+  }
 );

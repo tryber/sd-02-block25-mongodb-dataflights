@@ -1,10 +1,9 @@
 use dataFlights;
 db.voos.count(
   {
-    ano:
+    decolagens:
     {
-      $in:
-        [2017, 2018]
+      $gt: 20
     }
   }
 );
