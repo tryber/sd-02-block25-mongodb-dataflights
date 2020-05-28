@@ -1,2 +1,2 @@
 use dataFlights;
-db.voos.count({natureza: 'Doméstica' });
+db.voos.count({ natureza: 'Doméstica' });
