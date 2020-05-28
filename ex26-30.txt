@@ -1,0 +1,56 @@
+26 - 
+
+use dataFlights;
+db.voos.findOne({
+	$nor:
+	  [
+	    {litrosCombustivel: {$exists: false}},
+	    {litrosCombustivel: {$gt: 600}},
+	    {'empresa.nome': {$in: ['GOL','AZUL']}}
+	  ]
+});
+
+27 - 
+
+use dataFlights;
+db.voos.deleteMany({
+	$and:
+	  [
+	    {'empresa.nome': 'AZUL'},
+	    {litrosCombustivel: {$lt: 400}}
+	  ]
+}).deletedCount;
+
+28 -
+
+use dataFlights;
+db.voos.deleteMany({
+	$and:
+	  [
+	    {'empresa.nome': 'GOL'},
+	    {'passageiros.pagos': {$gte: 5, $lte: 10}}
+	  ]
+}).deletedCount;
+
+29 - 
+
+use dataFlights;
+const del = db.voos.deleteMany({
+	$and:
+	  [
+	    {'empresa.nome': 'GOL'},
+	    {'natureza': 'Doméstica'}
+	  ]
+}).deletedCount;
+db.resumoVoos.insert({empresa: 'GOL', totalVoosDomesticos: del});
+
+30 - 
+
+const delAzul = db.voos.deleteMany({
+	$and:
+	  [
+	    {'empresa.nome': 'AZUL'},
+	    {'natureza': 'Doméstica'}
+	  ]
+}).deletedCount;
+db.resumoVoos.insert({empresa: 'AZUL', totalVoosDomesticos: delAzul});
