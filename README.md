@@ -100,7 +100,7 @@ Retorne a quantidade de voos entre os anos de `2017` e `2018`.
 
 #### Desafio 12
 
-Retorne apenas os **10** primeiros documentos com voos da empresa `GOL` do ano de `2017`. Exiba apenas os campos `vooId`, `empresa.nome`, `aeroportoOrigem.nome`, `aerportoDestino.nome`, `mes` e `ano`.
+Retorne apenas os **10** primeiros documentos com voos da empresa `GOL` do ano de `2017`. Exiba apenas os campos `vooId`, `empresa.nome`, `aeroportoOrigem.nome`, `aeroportoDestino.nome`, `mes` e `ano`.
 
 #### Desafio 13
 
