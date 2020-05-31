@@ -2,10 +2,10 @@ use dataFlights;
 
 db.resumoVoos.insertOne(
   {
-    empresa: "GOL",
+    empresa: "AZUL",
     totalVoosDomesticos: db.voos.count(
       {
-        "empresa.nome": "GOL",
+        "empresa.nome": "AZUL",
         "natureza": "Doméstica"
       }
     )
