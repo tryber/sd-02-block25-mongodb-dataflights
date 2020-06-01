@@ -1,7 +1,1 @@
-db.voos.find(
-{
-  "ano": {
-    $gt: 2017
-  }
-}  
-);
+db.voos.find({ "ano": { $gt: 2017 } });
