@@ -1,8 +1,9 @@
-const delAzul = db.voos.deleteMany({
+use dataFlights;
+const countAzul = db.voos.count({
   $and:
     [
       { 'empresa.nome': 'AZUL' },
       { 'natureza': 'Doméstica' }
     ]
-}).deletedCount;
-db.resumoVoos.insert({ empresa: 'AZUL', totalVoosDomesticos: delAzul });
+});
+db.resumoVoos.insertOne({ empresa: 'AZUL', totalVoosDomesticos: countAzul });
