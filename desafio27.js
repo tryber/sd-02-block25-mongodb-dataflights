@@ -1,6 +1,16 @@
-db.voos.deleteMany({
+db.voos.count({
   $and: [
-    { litrosCombustivel: { $lt: 400 } },
-    { "empresa.nome": "AZUL" }
+    { natureza: "Doméstica" },
+    { "empresa.nome": "GOL" }
   ]
+});
+
+db.resumoVoos.insertOne({
+  empresa: "GOL",
+  totalVoosDomesticos: db.voos.count({
+    $and: [
+      { natureza: "Doméstica" },
+      { "empresa.nome": "GOL" }
+    ]
+  })
 });
