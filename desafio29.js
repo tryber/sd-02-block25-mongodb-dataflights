@@ -6,11 +6,6 @@ db.voos.count({
 });
 
 db.resumoVoos.insertOne({
-  empresa: "GOL",
-  totalVoosDomesticos: db.voos.count({
-    $and: [
-      { natureza: "Doméstica" },
-      { "empresa.nome": "GOL" }
-    ]
-  })
+  empresa:"GOL",
+  totalVoosDomesticos:25805
 });
