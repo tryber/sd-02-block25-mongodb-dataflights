@@ -1,2 +1,2 @@
 use dataFlights;
-db.voos.count({ "aeroportoDestino.pais": { $ne: "ESTADO UNIDOS" } });
+db.voos.count({ "aeroportoDestino.pais": { $ne: "ESTADOS UNIDOS" } });

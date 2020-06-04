@@ -1,2 +1,2 @@
 use dataFlights;
-db.voos.find({}, { vooId: 1 }).limit(1).skip(11);
+db.voos.find({}, { vooId: 1 }).limit(3).skip(9);
