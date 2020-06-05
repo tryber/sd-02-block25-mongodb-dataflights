@@ -14,7 +14,7 @@ Hoje você fará um projeto com o codinome _dataflights_. Nesse projeto, você p
 
 ## Instruções para restaurar o banco de dados `dataFlights`
 
-1. Faça o download do arquivo de backup [aqui](flights.tar.gz). Clique com botão direito e selecione "Salvar como" para salvar o arquivo em seu computador.
+1. Faça o download do arquivo de backup [aqui](flights.tar.gz). Para isso acesse o link e clique no botão "Download" para salvar o arquivo em seu computador.
 
 2. Abra o terminal e conecte-se à sua instância local do **MongoDB**. Se você receber uma mensagem de erro com uma mensagem como ***Connection refused***, tente reiniciar sua instância ([veja como fazer isso aqui](https://course.betrybe.com/back-end/mongodb/introduction/#conectando)).
 
