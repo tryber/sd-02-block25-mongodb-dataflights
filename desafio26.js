@@ -1,7 +1,7 @@
 db.voos.find({
     "litrosCombustivel": {
-        $gt: 1000
+      $lte: 600
     },
-  },
-  { "litrosCombustivel ": 1 }
+    "empresa.nome":  { $ne: ["GOL", "AZUL"] }
+  }
 ).limit(1);
