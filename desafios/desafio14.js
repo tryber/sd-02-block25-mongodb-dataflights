@@ -3,4 +3,12 @@ Utilizando os operadores lógicos, conte os documentos em que o campo aeroportoD
 seja igual a BRASIL, ARGENTINA ou CHILE. */
 
 use dataFlights;
-db.voos.find({$and: [{$or: [{"aeroportoDestino.pais": "BRASIL"}, {"aeroportoDestino.pais": "ARGENTINA"}, {"aeroporto.Destino.pais": "CHILE"}]}]}).count();
+db.voos.count(
+  {
+    $or: [
+      { "aeroportoDestino.pais": "BRASIL" },
+      { "aeroportoDestino.pais": "ARGENTINA" },
+      { "aeroportoDestino.pais": "CHILE" }
+    ]
+  }
+);

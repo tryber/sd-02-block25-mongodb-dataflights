@@ -2,4 +2,6 @@
 Retorne o total de voos com mais de 20 decolagens. */
 
 use dataFlights;
-db.voos.find({"decolagens": {$gt: 20}}).count();
+db.voos.count(
+  { "decolagens": {$gt: 20} }
+);

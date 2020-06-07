@@ -3,4 +3,14 @@ Utilizando os operadores lógicos, conte os documentos em que o campos aeroporto
  */
 
 use dataFlights;
-db.voos.find({$nor: [{"aeroporto.Destino.continente": "EUROPA", "aeroportoDestino.continente": "ÁSIA", "aeroportoDestino.continente": "OCEANIA"}]}).count();
+db.voos.count(
+  {
+    $nor: [
+      {
+        "aeroportoDestino.continente": "EUROPA",
+        "aeroportoDestino.continente": "ÁSIA",
+        "aeroportoDestino.continente": "OCEANIA"
+      }
+    ]
+  }
+);

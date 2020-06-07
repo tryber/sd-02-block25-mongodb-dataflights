@@ -4,6 +4,21 @@ insira na coleção resumoVoos um documento com os campos: empresa (nome da empr
 totalVoosDomesticos (o total retornado anteriormente). */
 
 use dataFlights;
-db.voos.find({$and: [{"empresa.nome": "GOL"}, {"natureza": "Doméstica"}]}).count();
+
+db.voos.count(
+  {
+    $and: [
+      { "empresa.nome": "GOL" },
+      { "natureza": "Doméstica" }
+    ]
+  }
+);
+
 // 25805
-db.resumoVoos.insertOne({"empresa.nome": "GOL", "totalVoosDomesticos": 25805});
+
+db.resumoVoos.insertOne(
+  {
+    "empresa": "GOL",
+    "totalVoosDomesticos": 25805
+  }
+);

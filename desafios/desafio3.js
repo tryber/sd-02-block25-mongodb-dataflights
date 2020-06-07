@@ -2,4 +2,4 @@
 Retorne a quantidade de documentos inseridos na coleção voos. */
 
 use dataFlights;
-db.voos.find().count();
+db.voos.count();

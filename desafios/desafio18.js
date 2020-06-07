@@ -2,4 +2,6 @@
 Retorne o total de voos em que o campo natureza possui o valor Internacional. */
 
 use dataFlights;
-db.voos.find({"decolagens": {$gt: 20}}).count();
+db.voos.count(
+  { "natureza": "Internacional" }
+);
