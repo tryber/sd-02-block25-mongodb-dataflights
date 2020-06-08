@@ -3,7 +3,7 @@ use dataFlights;
 db.voos.count(
   {
     $or: [
-      { "aeroportoDestino.pais": "BRAZIL" },
+      { "aeroportoDestino.pais": "BRASIL" },
       { "aeroportoDestino.pais": "ARGENTINA" },
       { "aeroportoDestino.pais": "CHILE" }
     ]
