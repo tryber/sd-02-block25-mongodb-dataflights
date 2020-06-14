@@ -1,4 +1,4 @@
-db.voos.find(
+db.voos.count(
   {
     "ano": {
         $lt: 2017
