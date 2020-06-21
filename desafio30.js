@@ -5,5 +5,5 @@ db.voos.count({
 
 db.resumoVoos.insert({
   "empresa": "AZUL",
-  "totalVoosDomesticos": 39622
+  "totalVoosDomesticos": 39092
 });
